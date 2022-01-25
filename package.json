@@ -1,0 +1,23 @@
+{
+  "name": "projeto-mog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVitor615/Projeto-MOG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoVitor615/Projeto-MOG/issues"
+  },
+  "homepage": "https://github.com/JoaoVitor615/Projeto-MOG#readme",
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  }
+}
