@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/JoaoVitor615/Projeto-MOG#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.1",
+    "autoprefixer": "^10.4.2",
+    "postcss-cli": "^9.1.0",
     "tailwindcss": "^2.0.2"
   }
 }
