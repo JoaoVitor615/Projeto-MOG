@@ -4,53 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mog Home</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <!-- Font Awesome Link -->
-    <script src="https://kit.fontawesome.com/629ec9bdfe.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img_content/mog_semfundo2.ico" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
     
     <style>
-      html {
-        height: 100%;
+      html{
+        size:100%
       }
       body {
         background: rgb(94,94,94);
-        background: linear-gradient(3deg, rgb(49, 49, 49) 0%, rgba(0,0,0,1) 100%);
+        background-color: linear-gradient(3deg, rgb(49, 49, 49) 0%, rgba(0,0,0,1) 100%);
+        background-image: image();
+        background-repeat: no-repeat;
       }
 
     </style>
 </head>
 <body>  
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Tailblocks</span>
-          </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900 bg-red-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed">Início</a>
-            <a class="mr-5 hover:text-gray-900" href="contato.html">Contato</a>
-            <a class="mr-5 hover:text-gray-900" href="galeria.html">Galeria</a>
-            <a class="mr-5 hover:text-gray-900" href="sobrenos.html">Sobre Nós</a>
-            <a class="mr-5 hover:text-gray-900" href="https://www.facebook.com"><img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494479.png?token=exp=1643257099~hmac=1e96bbbf70e926e0788c6d239fc1ecfe" width="30px"/></a>
-            <a class="mr-5 hover:text-gray-900" href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30px"/></a>
-          </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-      </header>
-  
 
-  
+<!-- Parte do jubotron, imagem nav bar e etc. -->
+<section class="px-3 antialiased bg-indigo-900" style="width: auto; height: auto; background-image: url(../img_content/img_home.png); background-repeat: no-repeat; background-size: 100%;">
+  <div class="mx-auto max-w-9xl">
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+
+        <!-- Imagem logo-->
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img style="width: 100px;" src="../img_content/mog_semfundo.png"/>
+        </a>
+
+        <!-- Navbar-->
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" >
+          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Home</a>
+          <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Sobre Nós</a>
+          <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Galeria</a>
+          <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Contato</a>
+        </nav>
+        
+        <!-- Botões de navegação da navbar -->
+        <div class="flex justify-center mb-8 space-x-6 md:order-last md:mb-0">
+          <a href="https://www.facebook.com/Dix-Tech-Corporation-116487190215728/" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/dix_tech/?hl=pt-br" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://github.com/dixdixtech" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Texto do jubotron -->
+      <div class="container py-32 mx-auto text-center sm:px-4" style="height: 700px;">
+          <h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl"><span class="block">Bem-vindo ao MOG</span></h1>
+          <div class="max-w-lg mx-auto mt-6 text-sm text-center text-indigo-200 md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl">A sua montadora de orquestras</div>
+      </div>
+
+
+  </div>
+</section>
+
+<!-- Div da parte que leva para a página sobre nós-->
+  <div class="w-auto h-28 bg-gray-700 text-white">
+      <p class=" ">aqui em baixo tem q ter um botonas</p>
+      <button class="h-auto w-24 ">aaaaaaaaaa</button>
+  </div>
+
+<!-- Div dos cartões de serviço -->
+  <div class="flex space-x-4 bg-gray-300 " style="width: auto; height: 300px;">
+    <div class="mb-16">
+      <dh-component>
+
+          <!-- Div do título de serviços-->
+          <div class="container flex justify-center mx-auto pt-16 bg-red-300">
+              <div>
+                  <h1 class="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">Serviços</h1>
+              </div>
+
+              <!-- Primeiro cartão de serviços -->
+              <div role="listitem" class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                <div class="rounded overflow-hidden shadow-md bg-white">
+        
+                    <!-- Div de imagem -->
+                    <div class="absolute -mt-20 w-full flex justify-center">
+                        <div class="h-32 w-32">
+                            <img src="https://cdn.tuk.dev/assets/photo-1564061170517-d3907caa96ea.jfif" alt="Display Picture of Andres Berlin" role="img" class="rounded-full object-cover h-full w-full shadow-md" />
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do cartão -->
+                    <div class="px-6 mt-16">
+                        <h2 class="font-bold text-3xl text-center mb-1">MONTAGEM</h2>
+                        <p class="text-center text-gray-600 text-base pt-3 font-normal">Trabalhamos com a montagem e a desmontagem de bandas sinfônicas, dando total suporte no manuseio e cuidado dos instrumentos.</p>
+                        <div class="w-full flex justify-center pt-5 pb-5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo cartão de serviços -->
+            <div role="listitem" class="xl:w-1/3 lg:mx-3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                <div class="rounded overflow-hidden shadow-md bg-white">
+
+                    <!-- Div de imagem -->
+                    <div class="absolute -mt-20 w-full flex justify-center">
+                        <div class="h-32 w-32">
+                            <img src="https://cdn.tuk.dev/assets/photo-1530577197743-7adf14294584.jfif" alt="Display Picture of Silene Tokyo" role="img" class="rounded-full object-cover h-full w-full shadow-md" />
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do cartão -->
+                    <div class="px-6 mt-16">
+                        <h1 class="font-bold text-3xl text-center mb-1">EXPERIÊNCIA</h1>
+                        <p class="text-center text-gray-600 text-base pt-3 font-normal">Temos Vasto conhecimento em vários tipos de montagem de acordo com a sinfonia que será executada pela orquestra, desde um quinteto, á uma grande sinfonia.</p>
+                        <div class="w-full flex justify-center pt-5 pb-5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro cartão de serviços -->
+            <div role="listitem" class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
+                <div class="rounded overflow-hidden shadow-md bg-white">
+
+                    <!-- Div de imagem -->
+                    <div class="absolute -mt-20 w-full flex justify-center">
+                        <div class="h-32 w-32">
+                            <img src="https://cdn.tuk.dev/assets/photo-1566753323558-f4e0952af115.jfif" alt="Display Picture of Johnson Stone" role="img" class="rounded-full object-cover h-full w-full shadow-md" />
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do cartão -->
+                    <div class="px-6 mt-16">
+                        <h1 class="font-bold text-3xl text-center mb-1">CLIENTES</h1>
+                        <p class="text-center text-gray-600 text-base pt-3 font-normal">Somos uma equipe habituada e preparada para trabalhar em pequenos e grandes teatros, como a grande Sala São Paulo por exemplo.</p>
+                        <div class="w-full flex justify-center pt-5 pb-5"></div>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+      </dh-component>
+    </div>
+  </div>
+  <footer>
+    <p><b>Todos os direitos reservados!</b></p>
+  </footer>
 </body>
 
 </html>
