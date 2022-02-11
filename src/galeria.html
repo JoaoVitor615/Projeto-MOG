@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <link rel="icon" href="../img_content/mog_semfundo2.ico" type="image/icon type">
+
     <style>
       html {
         height: 100%;
@@ -18,6 +19,106 @@
         background: rgb(94,94,94);
         background: linear-gradient(3deg, rgb(49, 49, 49) 0%, rgba(0,0,0,1) 100%);
       }
+      *, *:before, *:after {
+box-sizing: border-box;
+}
+
+body {
+font-family: poppins;
+margin: 0;
+display: grid;
+font-size: 14px;
+}
+header p {
+padding: 50px;
+text-align: center;
+color: #bebebe;
+text-transform: uppercase;
+font-size: 65px;
+font-weight: 700;
+}
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 50px;
+color: #fff;
+background-color: darkblue;
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1.25em;
+margin-bottom: 2em;
+}
+
+h2 {
+font-weight: 400;
+font-size: 15px;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+}
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+}
+
+.box a {
+color: #999;
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.b-footer {
+text-align: center;
+color: #999;
+padding-top: 50px;
+}
+
+.l-footer p {
+padding-right: 20%;
+color: #999;
+}   
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}
 
     </style>
 </head>
@@ -34,9 +135,9 @@
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <a class="mr-5 hover:text-gray-900" href="index.html">Início</a>
-            <a class="mr-5 hover:text-gray-900" href="contato.html">Contato</a>
-            <a class="mr-5 hover:text-gray-900 bg-red-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed">Galeria</a>
             <a class="mr-5 hover:text-gray-900" href="sobrenos.html">Sobre Nós</a>
+            <a class="mr-5 hover:text-gray-900 bg-red-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed">Galeria</a>
+            <a class="mr-5 hover:text-gray-900" href="contato.html">Contato</a>
             <a class="mr-5 hover:text-gray-900" href="https://www.facebook.com"><img src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494479.png?token=exp=1643257099~hmac=1e96bbbf70e926e0788c6d239fc1ecfe" width="30px"/></a>
             <a class="mr-5 hover:text-gray-900" href="https://www.instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30px"/></a>
           </nav>
@@ -137,7 +238,46 @@
   </button>
 </div>
 
-  
+
+<!--FOOTER RODAPÉ-->
+
+
+<footer class="footer">
+  <div class="l-footer">
+  <h1>
+  <img src="../img_content/mog_semfundo.png" alt="LOGO MOG"></h1>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+  </div>
+  <ul class="r-footer">
+  <li>
+    <h2>
+  Social</h2>
+  <ul class="box">
+  <li><a href="#">Facebook</a></li>
+  <li><a href="#">Twitter</a></li>
+  <li><a href="#">Pinterest</a></li>
+  <li><a href="#">Dribbble</a></li>
+  </ul>
+  </li>
+  <li class="features">
+    <h2>
+  Information</h2>
+  <ul class="box h-box">
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Pricing</a></li>
+  <li><a href="#">Sales</a></li>
+  <li><a href="#">Tickets</a></li>
+  <li><a href="#">Certifications</a></li>
+  <li><a href="#">Customer Service</a></li>
+  </ul>
+  </li>
+  </ul>
+    <div class="b-footer">
+      <p>Todos os direitos reservados ©MontagemDeOrquestras 2022</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
