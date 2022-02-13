@@ -43,7 +43,7 @@
 
         <!-- Navbar-->
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" >
-          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Home</a>
+          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors duration-200 hover:bg-white rounded-lg hover:text-black px-2 py-1 mr-9 text-lg text-white cursor-pointer ">Home</a>
           <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Sobre Nós</a>
           <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Galeria</a>
           <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="mr-9 text-lg text-white cursor-pointer ">Contato</a>
@@ -152,44 +152,26 @@
   </section>
 
 <!-- Div da galeria-->  
-  <div class="">
+  <div class="w-full">
     <div class="px-8">
       <img style="width: 100%; height: auto;" src="../img_content/violino.png">
     </div>
   </div>  
 
-<!-- Descrição e botão para a Galeria  
+<!-- Descrição e botão para a Galeria  -->
     <section class="text-gray-600 body-font"></section>
-      
-        <div class="lg:w-2/3 w-full flex flex-col sm:flex-row sm:items-center mx-0" style="align-items: center;">
-          <h1 class="font-serif w-64 sm:pr-16 text-2xl font-medium title-font text-gray-900">Esse daqui era um dos violinos dos melhores violinistas que ja tivemos na america latina, e ela foi exclusivamente cuidada pela Mog.</h1>
+
+      <div class="py-24" >
+        <div class="px-8 lg:w-full flex flex-col sm:flex-row sm:items-center items-start ">
+          <h1 class="font-serif flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Esse daqui era um dos violinos dos melhores violinistas que ja tivemos na america latina, e ela foi exclusivamente cuidada pela Mog.</h1>
           <form action="../src/galeria.html">
-          <button class="flex-shrink-0 flex-initial w-60 text-black border border-black text-center py-2 px-8 focus:shadow-outline hover:bg-black hover:text-white text-lg mt-10 sm:mt-0" style="white-space: nowrap;">Ver Galeria</button>        </div>  
+            <button class="transition-colors duration-200 flex-shrink-0 text-black border border-black py-2 px-8 focus:shadow-outline hover:bg-black hover:text-white text-lg mt-10 sm:mt-0" style="white-space: nowrap;">Ver Galeria</button> 
           </form>
-        </div>
-      
-    </section>-->
-
-
-    <section class="text-gray-600 body-font" >
-
-      <div class="container px-10 py-14 mx-auto">
-
-        <div class=" inline-flex sm:flex-row mr-0">
-          <h1 class="w-9/10 font-serif text-2xl font-medium title-font text-gray-900">Esse daqui era um dos violinos dos melhores violinistas que ja tivemos na america latina, e ela foi exclusivamente cuidada pela Mog.</h1>
-          
-          
-          <form class="" action="../src/galeria.html">
-            <button class=" w-2/10 flex-shrink-0 flex-initial text-black border border-black text-center py-2 px-8 focus:shadow-outline transition duration-150 hover:bg-black hover:text-white text-lg mt-10 sm:mt-0" style="white-space: nowrap;">Ver Galeria</button>        
-          </form>       
-        </div>
-        
+        </div>  
       </div>
-      
+
     </section>
 
-
-    
 
     
 
@@ -202,30 +184,21 @@
 
 <!-- Div de contato-->
   <div class="w-full h-48 bg-yellow-400 mt-12 text-white flex flex-row" style="align-items: center;">
-    <div class="w-full pt-6 pl-24">
+    <div class="w-full pl-24">
       <p style="font-family: 'font-serif', serif; font-size: 55px;">Precisando de uma mãozinha?</p>
       <p style="font-family: 'font-serif', serif; font-size: 24px;">Entre em contato conosco para ajuda e mais informações.</p>
     </div>
-    <form action="../src/contato.html">
-      <button class="flex-shrink-0 text-black border border-black py-2 px-8 focus:shadow-outline hover:bg-black hover:text-white text-lg mt-10 sm:mt-0" style="white-space: nowrap;">Fale Conosco</button> 
+    <form action="../src/contato.html" class="mr-24">
+      <button class="transition-colors duration-200 flex-shrink-0 text-black border border-black py-2 px-8 focus:shadow-outline hover:bg-black hover:text-white text-lg mt-10 sm:mt-0" style="white-space: nowrap;">Fale Conosco</button> 
     </form>
   </div>
-
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.</h1>
-      <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Button</button>
-    </div>
-  </div>
-</section>
 
 
  <!-- Footer --> 
   <footer class="text-gray-600 body-font">
     <div class="container lg:w-2/3 px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="../img_content/mog_semfundo.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10 text-black p-2 bg-white rounded-full" viewBox="0 0 24 24">
+        <img src="../img_content/mog_semfundo.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10 text-black p-2 bg-black rounded-full" viewBox="0 0 24 24">
         </img>
         <span class="ml-3 text-x1">Montagem de Orquestras em Geral</span>
       </a>
