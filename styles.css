@@ -20,6 +20,7 @@
     --color-text-galery-index:rgb(0, 0, 0);
     --color-text-galery-button-index:rgb(0, 0, 0);
     --color-text-sobre-nos:black;
+    --border-color-text-galery-button-index:black;
     --color-servi-text-title: black;
     --color-contato-div-bg:#df931b;
 }
@@ -33,6 +34,7 @@
     --color-texto-foot:white;
     --color-text-galery-index:rgb(255, 255, 255);
     --color-text-galery-button-index:rgb(255, 255, 255);
+    --border-color-text-galery-button-index:white;
     --color-text-sobre-nos:white;
     --color-servi-text-title:rgb(150, 155, 190);
     --color-contato-div-bg: #3f0101;
@@ -65,7 +67,7 @@ body{
 
 .text-galery-button-index{
     color: var(--color-text-galery-button-index);
-
+    border-color:var(--border-color-text-galery-button-index);
 }
 
 .servi-text-title{
