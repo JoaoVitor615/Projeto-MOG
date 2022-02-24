@@ -3,7 +3,36 @@
 @tailwind utilities;
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing: 0;
+    padding: 0;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.transitioncolor{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 10.5px 0 #ff008859;
+    cursor: pointer;
+    background-color: #505050;
+  }
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100% - 40px);
+    background-color: #ffffff;
+}
+.light{
+    background-color: #ffffff;
 }

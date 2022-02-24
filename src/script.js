@@ -58,3 +58,5 @@ var basicTimeline = anime.timeline({
   $(".text").click(function() {
     basicTimeline.play();
   });
+
+       
