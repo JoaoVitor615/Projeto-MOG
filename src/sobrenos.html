@@ -23,10 +23,7 @@
         padding:0;
       }
       body {
-        background: rgb(255, 255, 255);
-        background-color: linear-gradient(3deg, rgb(49, 49, 49) 0%, rgba(0,0,0,1) 100%);
-        background-image: image();
-        background-repeat: no-repeat;
+        transition: 1s;
         margin:0;
         padding:0;
       }
@@ -45,7 +42,7 @@
 <body>  
 
 <!-- Parte do jubotron, imagem nav bar e etc. -->
-<section class="px-3 antialiased" style="background-color: #140C0C;">
+<section class="px-3 antialiased nav-comum">
   <div class="mx-auto max-w-9xl">
     <header class="text-gray-600 body-font">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -58,10 +55,10 @@
 
         <!-- Navbar-->
         <nav class="md:ml-auto md:mr-auto flex flex-col sm:flex-row items-center text-base justify-center" >
-          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Home</a>
-          <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto underline hover:no-underline">Sobre Nós</a>
-          <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Galeria</a>
-          <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Contato</a>
+          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto my-title">Home</a>
+          <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto underline hover:no-underline my-title">Sobre Nós</a>
+          <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto my-title">Galeria</a>
+          <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto my-title">Contato</a>
         </nav>
         
         <!-- Botões de navegação da navbar -->
@@ -79,10 +76,10 @@
             </svg>
           </a>
           <div class="transitioncolor">                           
-            <button class="ball"></button>
+            <button class="ball js-theme" type="button"></button>
           </div>      
-          <script src="../src/js/myscript.js"></script>  
-        </div>
+          <script src="../src/js/myscript.js"></script>       
+      </div>
 
       </div>
     </header>
@@ -95,8 +92,8 @@
       <div class="  section bg1 flex flex-col sm:flex-row py-16 px-16">
 
         <div class="flex-shrink-0 text-center w-full sm:w-1/3">
-          <p class="animate__animated animate__fadeInLeft text-7xl" style="font-family: abhaya libre;">Quem</p>
-          <p class="animate__animated animate__fadeInLeft text-4xl flex-shrink-0" style="font-family: abhaya libre;">Nós somos?</p>
+          <p class="animate__animated animate__fadeInLeft text-7xl text-sobre-nos" style="font-family: abhaya libre;">Quem</p>
+          <p class="animate__animated animate__fadeInLeft text-4xl flex-shrink-0 text-sobre-nos" style="font-family: abhaya libre;">Nós somos?</p>
           <div class="flex mt-6 justify-center">
           <div class="w-40 h-1 rounded-full bg-gray-100 inline-flex"></div>
         </div>
@@ -104,13 +101,13 @@
         
 
         <div class="">
-          <p class="animate__animated animate__fadeInDown text-justify items-end mt-32 lg:mt-24 text-lg sm:text-3xl"style="font-family: abhaya libre; font-size: 30px;">
+          <p class="animate__animated animate__fadeInDown text-justify items-end mt-32 lg:mt-24 text-lg sm:text-3xl text-sobre-nos"style="font-family: abhaya libre; font-size: 30px;">
             Somos uma equipe que está habituada e preparada a desenvolver trabalhos tanto em pequenos teatros, 
             como em grandes, por exemplo, á Sala São Paulo. Conhecida e considerada como uma das melhores salas 
             de concerto da America latina e uma das melhores do mundo, onde varias orquestras do mundo já tocaram.
           </p>
           <div class="flex mt-6 justify-center">
-            <div style="width: 1120px;"class="h-1 rounded-full bg-gray-100 inline-flex"></div>
+            <div style="width: 50vw"class="h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
       </div>
@@ -119,20 +116,20 @@
       <div class="flex flex-col sm:flex-row  py-16 px-16">
 
         <div class="">
-          <p class="animate__animated animate__fadeInDown text-justify items-end mt-32 lg:mt-24 text-lg sm:text-3xl"style="font-family: abhaya libre; font-size: 30px;">
+          <p class="animateanimated animatefadeInDown text-justify items-end mt-32 lg:mt-24 text-lg sm:text-3xl text-sobre-nos"style="font-family: abhaya libre; font-size: 30px;">
             Fazemos a montagem e a desmontagem de bandas sinfônicas, 
             dando total suporte no manuseio e cuidado dos instrumentos.
           </p>
           <div class="flex mt-6 justify-center">
-            <div style="width: 1120px;"class="h-1 rounded-full bg-gray-100 inline-flex"></div>
+            <div style="width: 50vw;"class="h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
 
         <div class="flex-shrink-0 text-center w-full sm:w-1/3">
-          <p class="animate__animated animate__fadeInRight text-7xl" style="font-family: abhaya libre;">O que</p>
-          <p class="animate__animated animate__fadeInRight text-4xl flex-shrink-0" style="font-family: abhaya libre;">Fazemos?</p>
+          <p class="animate__animated animate__fadeInRight text-7xl text-sobre-nos" style="font-family: abhaya libre;">O que</p>
+          <p class="animate__animated animate__fadeInRight text-4xl flex-shrink-0 text-sobre-nos" style="font-family: abhaya libre;">Fazemos?</p>
           <div class="flex mt-6 justify-center">
-            <div class="w-40 h-1 rounded-full bg-gray-100 inline-flex"></div>
+            <div style="width: 15vw" class="w-40 h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
 
@@ -142,15 +139,15 @@
       <div class="section bg1 flex flex-col sm:flex-row py-16 px-16">
 
         <div class="flex-shrink-0 text-center w-full sm:w-1/3">
-          <p class="animate__animated animate__fadeInLeft text-7xl" style="font-family: abhaya libre;">Com Quem</p>
-          <p class="animate__animated animate__fadeInLeft text-4xl flex-shrink-0" style="font-family: abhaya libre;">Trabalhamos?</p>
+          <p class="animate__animated animate__fadeInLeft text-7xl text-sobre-nos" style="font-family: abhaya libre;">Com Quem</p>
+          <p class="animate__animated animate__fadeInLeft text-4xl flex-shrink-0 text-sobre-nos" style="font-family: abhaya libre;">Trabalhamos?</p>
           <div class="flex mt-6 justify-center">
             <div class="w-72 h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
 
         <div class="">
-          <p class="animate__animated animate__fadeInDown text-justify items-end mt-32 lg:mt-24 text-lg sm:text-3xl"style="font-family: abhaya libre; font-size: 30px;">
+          <p class="animate__animated animate__fadeInDown text-justify items-end mt-32 lg:mt-24 text-lg sm:text-3xl text-sobre-nos"style="font-family: abhaya libre; font-size: 30px;">
             Nossa equipe tem um vasto conhecimento, de vários tipos de montagem de acordo com a sinfonia que será 
             xecutada pela orquestra, desde um quinteto, á uma sinfonia grande composta por, Igor Stravinski -  A 
             Sagração da Primavera, PiotrIlitch Tchaikovsky, Johann Sebastian Bach, Johannes Brahms e outros muitos 
@@ -159,7 +156,7 @@
             solicitado pelo maestro outros instrumentos ou que a sinfonia pede através do compositor.
           </p>
           <div class="flex mt-6 justify-center">
-            <div style="width: 1120px;"class="h-1 rounded-full bg-gray-100 inline-flex"></div>
+            <div style="width: 50vw;"class="h-1 rounded-full bg-gray-100 inline-flex"></div>
           </div>
         </div>
       </div>
@@ -172,9 +169,9 @@
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
       <img src="../img_content/mog_semfundo.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10 text-black p-2 bg-black rounded-full" viewBox="0 0 24 24">
       </img>
-      <span class="ml-3 text-x1">Montagem de Orquestras em Geral</span>
+      <span class="ml-3 text-x1 texto-foot">Montagem de Orquestras em Geral</span>
     </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Montagem de Orquestras
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 texto-foot">© 2022 Montagem de Orquestras
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <div class="my-5 sm:my-0 flex justify-center mb-8 space-x-6 md:order-last md:mb-0">

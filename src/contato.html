@@ -18,13 +18,16 @@
       html{
         size:100%
       } 
+      body{
+        transition: 1s;
+      }
 
     </style>
 </head>
 <body>  
 
 <!-- Parte do jubotron, imagem nav bar e etc. -->
-<section class="px-3 antialiased" style="background-color: #140C0C;">
+<section class="px-3 antialiased nav-comum">
   <div class="mx-auto max-w-9xl">
     <header class="text-gray-600 body-font">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -36,10 +39,10 @@
 
         <!-- Navbar-->
         <nav class="md:ml-auto md:mr-auto flex flex-col sm:flex-row items-center text-base justify-center" >
-          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Home</a>
-          <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Sobre Nós</a>
-          <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto">Galeria</a>
-          <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto underline hover:no-underline">Contato</a>
+          <a href="../src/index.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto my-title">Home</a>
+          <a href="../src/sobrenos.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto my-title">Sobre Nós</a>
+          <a href="../src/galeria.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto my-title">Galeria</a>
+          <a href="../src/contato.html" style="font-family: 'font-serif', serif;" class="animate__animated animate__fadeInDown transition-colors p-2 mx-3 text-lg hover:bg-white hover:text-black text-white cursor-pointer border-white border w-32 text-center mt-3 sm:border-none sm:mt-0 sm:w-auto underline hover:no-underline my-title">Contato</a>
         </nav>
         
         <!-- Botões de navegação da navbar -->
@@ -57,10 +60,10 @@
             </svg>
           </a>
           <div class="transitioncolor">                           
-            <button class="ball"></button>
+            <button class="ball js-theme" type="button"></button>
           </div>      
-          <script src="../src/js/myscript.js"></script>  
-        </div>
+          <script src="../src/js/myscript.js"></script>       
+      </div>
         </div>
 
       </div>
@@ -112,7 +115,7 @@
           <div class="flex mt-12">
             
             <div class="mx-auto sm:mx-0">
-              <a class="transition-colors duration-200 flex-shrink-0 text-white border border-white py-2 px-8 focus:shadow-outline hover:bg-white hover:text-black text-lg mt-10 sm:mt-0" style="white-space: nowrap; filter: drop-shadow(0 0 10px black);" href="https://mail.google.com/" target="_blank">E-mail</a> 
+              <a class="transition-colors duration-200 flex-shrink-0 text-white border border-white py-2 px-8 focus:shadow-outline hover:bg-white hover:text-black text-lg mt-10 sm:mt-0" style="white-space: nowrap; filter: drop-shadow(0 0 10px black);" href="mailto:Mog.OsquestrasGeral@gmail.com?subject=" target="_blank">E-mail</a> 
             </div>
           </div>
 
@@ -146,15 +149,15 @@
 
 
 
-   <!-- Footer --> 
-   <footer class="text-gray-600 body-font" style="background-color: #140C0C;">
-    <div class="container lg:w-2/3 px-5 py-8 mx-auto flex items-center sm:flex-row flex-col ">
+  <!-- Footer --> 
+  <footer class="text-gray-600 body-font">
+    <div class="container lg:w-2/3 px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         <img src="../img_content/mog_semfundo.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-10 h-10 text-black p-2 bg-black rounded-full" viewBox="0 0 24 24">
         </img>
-        <span class="ml-3 text-x1 text-gray-500">Montagem de Orquestras em Geral</span>
+        <span class="ml-3 text-x1 text-gray-500 texto-foot">Montagem de Orquestras em Geral</span>
       </a>
-      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Montagem de Orquestras
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 texto-foot">© 2022 Montagem de Orquestras
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
               <!--FACEBOOK-->
