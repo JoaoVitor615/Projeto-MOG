@@ -1,4 +1,4 @@
-document.body.setAttribute('data-theme', 't-light')
+document.body.setAttribute('data-theme', 't-dark')
 
 const button_changecolor = document.querySelector('.js-theme')
 
