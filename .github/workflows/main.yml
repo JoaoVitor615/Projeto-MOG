@@ -17,4 +17,4 @@ jobs:
         server: dixtechcorp.com
         username: ${{ secrets.ftp_user }}
         password: Petonauta44
-        server-dir: public_html/mog
+        server-dir: public_html/mog/
