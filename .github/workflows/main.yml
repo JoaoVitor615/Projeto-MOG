@@ -14,7 +14,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ${{ secrets.ftp_host }}
+        server: dixtechcorp.com
         username: ${{ secrets.ftp_user }}
         password: Petonauta44
-        server-dir: mog/mog/Projeto-MOG-main/src/
+        server-dir: public_html/mog
