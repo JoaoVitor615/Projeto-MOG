@@ -17,4 +17,4 @@ jobs:
         server: ftp.dixtechcorp.com
         username: u363768036
         password: Petonauta44
-        server-dir: /public_html/mog/
+        server-dir: public_html/teste/
