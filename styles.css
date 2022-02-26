@@ -37,7 +37,7 @@
     --border-color-text-galery-button-index:white;
     --color-text-sobre-nos:white;
     --color-servi-text-title:rgb(150, 155, 190);
-    --color-contato-div-bg: #3f0101;
+    --color-contato-div-bg: rgb(0, 0, 0);
   }
 
 body{
