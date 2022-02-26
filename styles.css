@@ -10,10 +10,12 @@
     outline: none;
 }
 *[data-theme="t-light"]{
-    --color-bg: rgb(214, 211, 211);
+    --color-bg: rgb(255, 255, 255);
     --color-bg2: rgb(255, 255, 255);
     --color-text: rgb(0, 0, 0);
     --color-nav-bg:var(--color-bg);
+    --color-nav-wp:#000000;
+
     --color-nav-text:black;
     --color-servi-text:black;
     --color-texto-foot:black;
@@ -25,10 +27,12 @@
     --color-contato-div-bg:#df931b;
 }
 *[data-theme="t-dark"] {
-    --color-bg: rgb(27, 27, 27);;
+    
+    --color-bg: rgb(24, 24, 24);;
     --color-bg2: #dcdcdc;
     --color-text: #ffffff;
-    --color-nav-bg:#140C0C;
+    --color-nav-bg:#000000;
+    --color-nav-wp:#000000;
     --color-nav-text: rgb(255, 255, 255);
     --color-servi-text:white;
     --color-texto-foot:white;
@@ -36,7 +40,7 @@
     --color-text-galery-button-index:rgb(255, 255, 255);
     --border-color-text-galery-button-index:white;
     --color-text-sobre-nos:white;
-    --color-servi-text-title:rgb(150, 155, 190);
+    --color-servi-text-title:rgb(255, 208, 0);
     --color-contato-div-bg: rgb(0, 0, 0);
   }
 
@@ -89,12 +93,13 @@ body{
     width: 80px;
     height: 40px;
     border-radius: 25px;
-    box-shadow: 0 0 10.5px 0 #ff008859;
     cursor: pointer;
     background-color: #505050;
+
     
 }
 .ball{
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -103,8 +108,14 @@ body{
     border-radius: 50%;
     background-color: #000000;
     transition: left 1s;
+    border: 3px solid #505050;
 }
 .ball-move{
     left: calc(100% - 40px);
     background-color: rgb(255, 255, 255);
+    
+}
+
+.ball:focus{
+    outline: 0;
 }
